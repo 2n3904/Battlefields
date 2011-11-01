@@ -1,0 +1,12 @@
+name: Battlefields
+version: 1.0
+author: 2n3904
+main: me.jkow.battlefields.Battlefields
+description: Deathmatch, CTF, Trophy, Free-For-All region enclosed player organized 
+website:
+
+commands:
+  bf:
+    permissions: battlefields.player
+    description: general bf use
+    usage: /<command>
