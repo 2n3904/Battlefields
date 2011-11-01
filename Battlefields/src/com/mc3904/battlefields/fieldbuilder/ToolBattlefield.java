@@ -5,17 +5,11 @@ import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 
 import com.mc3904.battlefields.field.Battlefield;
-import com.mc3904.battlefields.players.TeamColor;
-import com.mc3904.battlefields.util.BFBlock;
 import com.mc3904.battlefields.util.BFRegion;
 import com.mc3904.battlefields.util.Format;
 
 public class ToolBattlefield extends Tool 
 {
-	private String name = null;
-	private boolean makingList = false;
-	private boolean awaitingYes = false;
-	
 	private Block[] points = new Block[2];
 	
 	@Override

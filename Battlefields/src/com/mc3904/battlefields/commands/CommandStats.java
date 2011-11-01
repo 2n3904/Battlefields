@@ -2,7 +2,6 @@ package com.mc3904.battlefields.commands;
 
 import java.util.Map;
 
-
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
@@ -17,22 +16,12 @@ import com.mc3904.battlefields.util.Format;
 // Usage: /bf stats <playername>, /bf stats
 //-------------------------------------------------------------------------------------------------------------------//
 
-public class CommandStats implements BattlefieldCommand
+public class CommandStats extends BattlefieldCommand
 {
-	private Player p;
-	private Battlefields plugin;
-	private String[] args;
-    
-	//-------------------------------------------------------------------------------------------------------------------//
-	
-	public CommandStats(Player p, String[] args, Battlefields plugin)
+	public CommandStats(Player p, String[] args, Battlefields plugin) 
 	{
-		this.p = p;
-		this.args = args;
-		this.plugin = plugin;
+		super(p, args, plugin);
 	}
-    
-	//-------------------------------------------------------------------------------------------------------------------//
 
 	@Override
 	public String execute() 

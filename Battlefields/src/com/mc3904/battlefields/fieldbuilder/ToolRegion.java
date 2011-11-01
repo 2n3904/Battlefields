@@ -4,17 +4,13 @@ package com.mc3904.battlefields.fieldbuilder;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 
-import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.players.TeamColor;
-import com.mc3904.battlefields.util.BFBlock;
 import com.mc3904.battlefields.util.BFRegion;
 import com.mc3904.battlefields.util.Format;
 
 public class ToolRegion extends Tool 
 {
 	private TeamColor color = TeamColor.NEUTRAL;
-	private String currentList = null;
-	private boolean makingList = false;
 	
 	private Block[] points = new Block[2];
 	
@@ -68,7 +64,6 @@ public class ToolRegion extends Tool
 			i = 0;
 		this.color = TeamColor.values()[i];
 		fb.getPlayer().sendMessage(Format.buildTag + "Region tool color changed to '" + color.getColorTag() + "'.");
-		currentList = null;
 		return;
 	}
 	

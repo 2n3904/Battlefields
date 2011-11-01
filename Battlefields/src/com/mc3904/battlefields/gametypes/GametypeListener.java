@@ -7,9 +7,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
-import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.players.TeamMember;
-import com.mc3904.battlefields.util.BFRegion;
 
 public class GametypeListener 
 {

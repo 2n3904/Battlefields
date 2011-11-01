@@ -1,8 +1,5 @@
 package com.mc3904.battlefields.scores;
 
-import org.bukkit.Bukkit;
-
-import com.mc3904.battlefields.util.Stringable;
 
 
 public class Score

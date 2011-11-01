@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-
 import org.bukkit.Location;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -48,7 +46,7 @@ public class Battlefields extends JavaPlugin
     private final BYamlConfiguration yplayers = new BYamlConfiguration(fplayers);
     private final BYamlConfiguration yfields = new BYamlConfiguration(ffields);
 
-	private final ConfigManager cm = new ConfigManager(this, yconfig);
+	private final ConfigManager cm = new ConfigManager(yconfig);
 	private final GametypeManager gm = new GametypeManager(this);
 	private final ScoreManager sm = new ScoreManager(this, yplayers);
 	private final BattlefieldManager fm = new BattlefieldManager(this, yfields);

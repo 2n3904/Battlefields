@@ -1,15 +1,10 @@
 package com.mc3904.battlefields.signs;
 
 
-import org.bukkit.ChatColor;
 import org.bukkit.block.Sign;
 
 import com.mc3904.battlefields.ConfigManager;
 import com.mc3904.battlefields.field.Battlefield;
-import com.mc3904.battlefields.field.BattlefieldManager;
-import com.mc3904.battlefields.gametypes.Gametype;
-import com.mc3904.battlefields.gametypes.GametypeManager;
-import com.mc3904.battlefields.gametypes.GametypePlugin;
 import com.mc3904.battlefields.players.TeamMember;
 import com.mc3904.battlefields.util.Format;
 

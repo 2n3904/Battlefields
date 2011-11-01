@@ -14,22 +14,12 @@ import com.mc3904.battlefields.fieldbuilder.Builder;
 // Usage: /bf edit
 //-------------------------------------------------------------------------------------------------------------------//
 
-public class CommandEdit implements BattlefieldCommand
+public class CommandEdit extends BattlefieldCommand
 {
-	private Player p;
-	private Battlefields plugin;
-	private String[] args;
-    
-	//-------------------------------------------------------------------------------------------------------------------//
-	
-	public CommandEdit(Player p, String[] args, Battlefields plugin)
+	public CommandEdit(Player p, String[] args, Battlefields plugin) 
 	{
-		this.p = p;
-		this.args = args;
-		this.plugin = plugin;
+		super(p, args, plugin);
 	}
-    
-	//-------------------------------------------------------------------------------------------------------------------//
 
 	@Override
 	public String execute() 

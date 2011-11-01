@@ -2,7 +2,6 @@ package com.mc3904.battlefields.commands;
 
 import java.util.List;
 
-
 import org.bukkit.entity.Player;
 
 import com.mc3904.battlefields.Battlefields;
@@ -19,22 +18,12 @@ import com.mc3904.battlefields.voting.VoteKick;
 // Usage: /bf top, /bf top <typeindex>, /bf top types
 //-------------------------------------------------------------------------------------------------------------------//
 
-public class CommandVote implements BattlefieldCommand
+public class CommandVote extends BattlefieldCommand
 {
-	private Player p;
-	private Battlefields plugin;
-	private String[] args;
-    
-	//-------------------------------------------------------------------------------------------------------------------//
-	
-	public CommandVote(Player p, String[] args, Battlefields plugin)
+	public CommandVote(Player p, String[] args, Battlefields plugin) 
 	{
-		this.p = p;
-		this.args = args;
-		this.plugin = plugin;
+		super(p, args, plugin);
 	}
-    
-	//-------------------------------------------------------------------------------------------------------------------//
 
 	@Override
 	public String execute() 

@@ -22,7 +22,6 @@ import com.mc3904.battlefields.Battlefields;
 import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.fieldbuilder.Builder;
 import com.mc3904.battlefields.fieldbuilder.Tool;
-import com.mc3904.battlefields.gametypes.Gametype;
 import com.mc3904.battlefields.players.Team;
 import com.mc3904.battlefields.players.TeamMember;
 import com.mc3904.battlefields.signs.BattlefieldSign;
@@ -62,7 +61,6 @@ public class PListener extends PlayerListener
 
     public void onPlayerJoin(PlayerJoinEvent event)
     {
-    	Player p = event.getPlayer();
     	
     	// TODO Load player stats
     	

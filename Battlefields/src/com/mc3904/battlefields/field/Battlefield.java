@@ -4,12 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
-
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
@@ -85,7 +81,7 @@ public class Battlefield
 		{
 			teams.put(color, new Team(color, this));
 		}
-		this.settings = new BattlefieldSettings(this);
+		this.settings = new BattlefieldSettings();
 	}
 	
 	// Add a player to the field
@@ -367,9 +363,6 @@ public class Battlefield
 	// TODO Save the statistics for all players on the battlefield
 	public void savePlayers()
 	{
-		for(TeamMember m : this.getPlayers())
-		{
-		}
 	}
 	
 	// Sends given message to all players on the battlefield

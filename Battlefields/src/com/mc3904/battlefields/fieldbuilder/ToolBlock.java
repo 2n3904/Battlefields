@@ -4,7 +4,6 @@ package com.mc3904.battlefields.fieldbuilder;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 
-import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.players.TeamColor;
 import com.mc3904.battlefields.util.BFBlock;
 import com.mc3904.battlefields.util.Format;
@@ -14,7 +13,6 @@ public class ToolBlock extends Tool
 	private TeamColor color = TeamColor.NEUTRAL;
 	private Block lastBlock = null;
 	private String currentList = null;
-	private boolean makingList = false;
 	
 	@Override
 	public void rightClick(Block b) 

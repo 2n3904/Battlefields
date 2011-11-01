@@ -13,22 +13,12 @@ import com.mc3904.battlefields.players.TeamMember;
 // Usage: /bf score, /bf score <team>
 //-------------------------------------------------------------------------------------------------------------------//
 
-public class CommandScore implements BattlefieldCommand
+public class CommandScore extends BattlefieldCommand
 {
-	private Player p;
-	private Battlefields plugin;
-	private String[] args;
-    
-	//-------------------------------------------------------------------------------------------------------------------//
-	
-	public CommandScore(Player p, String[] args, Battlefields plugin)
+	public CommandScore(Player p, String[] args, Battlefields plugin) 
 	{
-		this.p = p;
-		this.args = args;
-		this.plugin = plugin;
+		super(p, args, plugin);
 	}
-    
-	//-------------------------------------------------------------------------------------------------------------------//
 
 	@Override
 	public String execute() 

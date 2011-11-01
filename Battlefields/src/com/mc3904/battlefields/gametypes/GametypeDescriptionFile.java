@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
 import org.bukkit.plugin.InvalidDescriptionException;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.SafeConstructor;
@@ -64,7 +63,8 @@ public final class GametypeDescriptionFile
     	return allowedteams;
     }
 
-    private void loadMap(Map<String, Object> map) throws InvalidDescriptionException {
+    @SuppressWarnings("unchecked")
+	private void loadMap(Map<String, Object> map) throws InvalidDescriptionException {
         try {
             name = map.get("name").toString();
             if (!name.matches("^[A-Za-z0-9 _.-]+$")) {

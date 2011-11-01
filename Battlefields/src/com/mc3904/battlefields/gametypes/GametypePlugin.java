@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 import org.bukkit.Server;
 import org.bukkit.configuration.ConfigurationSection;
 
@@ -15,7 +14,6 @@ import com.mc3904.battlefields.Battlefields;
 import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.scores.Score;
 import com.mc3904.battlefields.scores.ScoreType;
-import com.mc3904.battlefields.util.BFLocation;
 import com.mc3904.battlefields.util.BYamlConfiguration;
 
 public abstract class GametypePlugin

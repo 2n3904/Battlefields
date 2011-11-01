@@ -3,18 +3,14 @@ package com.mc3904.battlefields.listeners;
 
 
 import org.bukkit.block.Block;
-import org.bukkit.block.Sign;
-import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockListener;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.event.block.SignChangeEvent;
 
 import com.mc3904.battlefields.Battlefields;
 import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.gametypes.Gametype;
 import com.mc3904.battlefields.players.TeamMember;
-import com.mc3904.battlefields.util.Format;
 
 public class BListener extends BlockListener {
 	

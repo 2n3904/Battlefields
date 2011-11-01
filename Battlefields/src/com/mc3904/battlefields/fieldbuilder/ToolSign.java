@@ -5,7 +5,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 
-import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.signs.BattlefieldSign;
 import com.mc3904.battlefields.signs.SignArmor;
 import com.mc3904.battlefields.signs.SignClasses;

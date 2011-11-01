@@ -2,22 +2,11 @@
 package com.mc3904.battlefields.util;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
-
 
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.block.Block;
-import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.inventory.ItemStack;
-
-import com.mc3904.battlefields.Battlefields;
 
 //-------------------------------------------------------------------------------------------------------------------//
 
@@ -88,6 +77,7 @@ public class BYamlConfiguration extends YamlConfiguration
 		return null;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<?> getObjList(String root, Class<?> c)
 	{
 		List<Object> olist = new ArrayList<Object>();

@@ -1,14 +1,8 @@
 package com.mc3904.battlefields.scores;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import org.bukkit.Bukkit;
 
 //-------------------------------------------------------------------------------------------------------------------//
 
@@ -19,10 +13,11 @@ public class ScoreType
 	private String name;
 	private ScoreManager sm;
 	
+	@SuppressWarnings("serial")
 	private SortedSet<Score> scores = new TreeSet<Score>() 
 	{
 		@Override
-		public Comparator comparator()
+		public Comparator<Score> comparator()
 		{
 			return new Comparator<Score>()
 			{

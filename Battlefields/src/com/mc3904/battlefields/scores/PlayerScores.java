@@ -5,12 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.bukkit.Bukkit;
-
-import com.mc3904.battlefields.Battlefields;
 import com.mc3904.battlefields.gametypes.GametypePlugin;
-import com.mc3904.battlefields.util.BYamlConfiguration;
-import com.mc3904.battlefields.util.Stringable;
 
 
 public class PlayerScores
@@ -24,6 +19,11 @@ public class PlayerScores
 	public PlayerScores(String player)
 	{
 		this.player = player;
+	}
+	
+	public String getPlayerName()
+	{
+		return player;
 	}
 	
 	public void addScore(Score score)

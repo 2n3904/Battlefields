@@ -12,7 +12,6 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Pattern;
 
-
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.InvalidDescriptionException;
@@ -135,7 +134,8 @@ import com.mc3904.battlefields.Battlefields;
          return null;
      }
  
-     public void setClass(final String name, final Class<?> clazz) {
+    @SuppressWarnings("unchecked")
+	public void setClass(final String name, final Class<?> clazz) {
          if (!classes.containsKey(name)) {
              classes.put(name, clazz);
              
@@ -146,7 +146,8 @@ import com.mc3904.battlefields.Battlefields;
          }
      }
      
-     public void removeClass(String name) {
+     @SuppressWarnings("unchecked")
+	public void removeClass(String name) {
          Class<?> clazz = classes.remove(name);
          
          if ((clazz != null) && (ConfigurationSerializable.class.isAssignableFrom(clazz))) {

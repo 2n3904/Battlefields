@@ -1,19 +1,14 @@
 package com.mc3904.battlefields.field;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import com.mc3904.battlefields.players.TeamMemberClass;
 import com.mc3904.battlefields.util.Armor;
-import com.mc3904.battlefields.util.Format;
 import com.mc3904.battlefields.util.Weapon;
 
 
 public class BattlefieldSettings 
 {
-	private Battlefield field;
 	
 	Armor[] armor = new Armor[4];
 	Map<Weapon, Boolean> weapons = new HashMap<Weapon, Boolean>();
@@ -25,14 +20,10 @@ public class BattlefieldSettings
 	public boolean allow_classes = true;
 	public boolean team_kills = false;
 	
-	private TeamMemberClass defaultclass;
-	
-	public BattlefieldSettings(Battlefield field)
+	public BattlefieldSettings()
 	{
-		this.field = field;
 		for(Weapon w : Weapon.values())
 			weapons.put(w, false);
-				
 	}
 	
 	public boolean isArmorAllowed(Armor a)

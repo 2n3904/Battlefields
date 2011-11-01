@@ -1,29 +1,23 @@
 package com.mc3904.battlefields;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 
 import com.mc3904.battlefields.players.TeamMemberClass;
-import com.mc3904.battlefields.util.BFBlock;
 import com.mc3904.battlefields.util.BYamlConfiguration;
-import com.mc3904.battlefields.util.Format;
 
 
 public class ConfigManager 
 {
-	private Battlefields plugin;
 	private BYamlConfiguration yaml;
 	
 	private Map<String, TeamMemberClass> classes = new HashMap<String, TeamMemberClass>();
 	
-	public ConfigManager(Battlefields plugin, BYamlConfiguration config)
+	public ConfigManager(BYamlConfiguration config)
 	{
-		this.plugin = plugin;
 		this.yaml = config;
 	}
 	
@@ -37,6 +31,7 @@ public class ConfigManager
 		return classes.get(str);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void loadConfig()
 	{
 		ConfigurationSection clist = yaml.getConfigurationSection("classes");
@@ -45,16 +40,16 @@ public class ConfigManager
 			for(String str : clist.getKeys(false))
 			{
 				ConfigurationSection ckey = clist.getConfigurationSection(str);
-				int damage_b, damage_r, helmet;
+				int damage_b, damage_r;
 				List<Integer> weapons;
 				Integer[] armor = new Integer[4];
-				damage_b = clist.getInt("damage_bonus", 0);
-				damage_r = clist.getInt("damage_reduction", 0);
+				damage_b = ckey.getInt("damage_bonus", 0);
+				damage_r = ckey.getInt("damage_reduction", 0);
 				weapons = (List<Integer>)clist.getList("weapons");
-				armor[0] = clist.getInt("armor.helmet", 0);
-				armor[1] = clist.getInt("armor.chestplate", 0);
-				armor[2] = clist.getInt("armor.leggings", 0);
-				armor[3] = clist.getInt("armor.boots", 0);
+				armor[0] = ckey.getInt("armor.helmet", 0);
+				armor[1] = ckey.getInt("armor.chestplate", 0);
+				armor[2] = ckey.getInt("armor.leggings", 0);
+				armor[3] = ckey.getInt("armor.boots", 0);
 				classes.put(str, new TeamMemberClass(str, damage_b, damage_r, weapons, armor));
 			}
 		}

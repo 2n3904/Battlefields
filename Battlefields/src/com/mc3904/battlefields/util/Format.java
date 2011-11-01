@@ -2,7 +2,6 @@ package com.mc3904.battlefields.util;
 
 import java.text.DecimalFormat;
 
-
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;

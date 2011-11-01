@@ -1,15 +1,10 @@
 package com.mc3904.battlefields.commands;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeMap;
 
-
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 import com.mc3904.battlefields.Battlefields;
-import com.mc3904.battlefields.scores.ScoreManager;
 
 //-------------------------------------------------------------------------------------------------------------------//
 // Top Command
@@ -17,24 +12,12 @@ import com.mc3904.battlefields.scores.ScoreManager;
 // Usage: /bf top, /bf top <typeindex>, /bf top types
 //-------------------------------------------------------------------------------------------------------------------//
 
-public class CommandTop implements BattlefieldCommand
+public class CommandTop extends BattlefieldCommand
 {
-	private Player p;
-	private Battlefields plugin;
-	private String[] args;
-	private ScoreManager sm;
-    
-	//-------------------------------------------------------------------------------------------------------------------//
-	
-	public CommandTop(Player p, String[] args, Battlefields plugin)
+	public CommandTop(Player p, String[] args, Battlefields plugin) 
 	{
-		this.p = p;
-		this.args = args;
-		this.plugin = plugin;
-		this.sm = plugin.getScoreManager();
+		super(p, args, plugin);
 	}
-    
-	//-------------------------------------------------------------------------------------------------------------------//
 
 	@Override
 	public String execute() 

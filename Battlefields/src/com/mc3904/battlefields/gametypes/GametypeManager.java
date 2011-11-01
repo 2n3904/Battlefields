@@ -11,8 +11,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
-import org.bukkit.Server;
 import org.bukkit.plugin.InvalidDescriptionException;
 import org.bukkit.plugin.InvalidPluginException;
 
@@ -22,7 +20,6 @@ public class GametypeManager
 {
 	private HashMap<String, GametypePlugin> gametypes = new HashMap<String, GametypePlugin>();
 	private Battlefields plugin;
-	private Server server;
 	
 	private final Map<Pattern, GametypeLoader> fileAssociations = new HashMap<Pattern, GametypeLoader>();
 	
@@ -30,7 +27,6 @@ public class GametypeManager
 	public GametypeManager(Battlefields plugin)
 	{
 		this.plugin = plugin;
-		this.server = plugin.getServer();
 	}
 	
 	public GametypePlugin getGametype(String s)
@@ -84,7 +80,7 @@ public class GametypeManager
         boolean allFailed = false;
         boolean finalPass = false;
 
-        LinkedList<File> filesList = new LinkedList(Arrays.asList(files));
+        LinkedList<File> filesList = new LinkedList<File>(Arrays.asList(files));
         while(!allFailed || finalPass) 
         {
             allFailed = true;

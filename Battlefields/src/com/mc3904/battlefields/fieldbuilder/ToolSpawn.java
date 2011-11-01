@@ -1,11 +1,8 @@
 package com.mc3904.battlefields.fieldbuilder;
 
 import org.bukkit.ChatColor;
-import org.bukkit.block.Block;
 
-import com.mc3904.battlefields.field.Battlefield;
 import com.mc3904.battlefields.players.TeamColor;
-import com.mc3904.battlefields.util.BFBlock;
 import com.mc3904.battlefields.util.BFLocation;
 import com.mc3904.battlefields.util.Format;
 

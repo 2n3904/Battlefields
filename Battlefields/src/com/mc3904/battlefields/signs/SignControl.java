@@ -1,20 +1,11 @@
 package com.mc3904.battlefields.signs;
 
 
-import org.bukkit.ChatColor;
 import org.bukkit.block.Sign;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
 
 import com.mc3904.battlefields.field.Battlefield;
-import com.mc3904.battlefields.field.Options;
-import com.mc3904.battlefields.gametypes.Gametype;
-import com.mc3904.battlefields.gametypes.GametypeManager;
-import com.mc3904.battlefields.gametypes.GametypePlugin;
 import com.mc3904.battlefields.players.TeamMember;
-import com.mc3904.battlefields.util.Armor;
 import com.mc3904.battlefields.util.Format;
-import com.mc3904.battlefields.util.Weapon;
 
 public class SignControl extends BattlefieldSign
 {

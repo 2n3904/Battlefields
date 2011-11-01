@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -17,7 +15,6 @@ import org.bukkit.entity.Player;
 
 import com.mc3904.battlefields.Battlefields;
 import com.mc3904.battlefields.fieldbuilder.Builder;
-import com.mc3904.battlefields.players.TeamColor;
 import com.mc3904.battlefields.players.TeamMember;
 import com.mc3904.battlefields.signs.BattlefieldSign;
 import com.mc3904.battlefields.signs.SignArmor;
@@ -128,6 +125,7 @@ public class BattlefieldManager
 	}
 	
 	// Load a field by given name from save
+	@SuppressWarnings("unchecked")
 	public boolean loadField(String name)
 	{
 		String root = "fields." + name + ".";

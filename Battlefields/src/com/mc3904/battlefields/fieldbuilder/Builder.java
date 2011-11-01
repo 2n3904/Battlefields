@@ -3,7 +3,6 @@ package com.mc3904.battlefields.fieldbuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

@@ -1,8 +1,6 @@
 package com.mc3904.battlefields.util;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.World;
 import org.bukkit.inventory.ItemStack;
 
 public class BFItemStack extends ItemStack implements Stringable

@@ -1,18 +1,9 @@
 package com.mc3904.battlefields.scores;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-
-
-import org.bukkit.entity.Player;
 
 import com.mc3904.battlefields.Battlefields;
-import com.mc3904.battlefields.gametypes.GametypePlugin;
-import com.mc3904.battlefields.players.TeamMember;
 import com.mc3904.battlefields.util.BYamlConfiguration;
 
 public class ScoreManager 

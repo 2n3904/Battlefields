@@ -2,7 +2,6 @@ package com.mc3904.battlefields.signs;
 
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.block.Sign;
 
 import com.mc3904.battlefields.field.Battlefield;

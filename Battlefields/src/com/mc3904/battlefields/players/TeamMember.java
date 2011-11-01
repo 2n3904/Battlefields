@@ -1,8 +1,5 @@
 package com.mc3904.battlefields.players;
 
-import java.util.HashMap;
-
-
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Location;
